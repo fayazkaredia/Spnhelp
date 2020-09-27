@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images/title-img.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Feedback</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav-menu" style="background: #2d545e">
+      <a href="index.html" class="navbar-brand text-light text-uppercase"
+        ><span class="h2 font-weight-bold"><img src="images/spn-1.png" /></span
+        ><span class="h1"></span
+      ></a>
+      <button
+        class="navbar-toggler nav-button"
+        type="button"
+        data-toggle="collapse"
+        data-target="#myNavbar"
+      >
+        <div class="bg-light line1"></div>
+        <div class="bg-light line2"></div>
+        <div class="bg-light line3"></div>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold"
+        id="myNavbar"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link m-2 menu-item">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="resources.html" class="nav-link m-2 menu-item"
+              >Resources</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link m-2 menu-item dropdown-toggle"
+              id="navbarDropdown"
+              href=""
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Register
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="mentor.html">Mentor</a>
+              <a class="dropdown-item" href="student.html">Student</a>
+              <a class="dropdown-item" href="bussiness.html">Business</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link m-2 menu-item">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="feedback.html" class="nav-link m-2 menu-item nav-active"
+              >Feedback</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="team.html" class="nav-link m-2 menu-item">Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link m-2 menu-item">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="header1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <h1>Student Feedback Form</h1>
+          </div>
+        </div>
+      </div>
+      <!-- end of banner -->
+    </header>
+    <!-- end of header -->
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <form id="contactForm">
+      <div class="container register">
+        <div class="row">
+          <div class="col-md-3 register-left">
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+            <h3>Welcome</h3>
+            <p>
+              This form is to tr​ack the progress and to know if we need to
+              connect you with more mentors in the network.
+            </p>
+          </div>
+          <div class="col-md-9 register-right">
+            <h3 class="register-heading">Let's get started</h3>
+            <div class="row register-form">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">First Name*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstname"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Last Name*</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastname"
+                    placeholder=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address*</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"
+                    >Did you had your first interaction with your mentor?
+                    *</label
+                  >
+                  <select class="form-control" id="interaction" required>
+                    <option value="" disabled selected>
+                      Select your option
+                    </option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">
+                    Were all your questions answered? If No, add comments in the
+                    last question*</label
+                  >
+                  <select class="form-control" id="question" required>
+                    <option value="" disabled selected>
+                      Select your option
+                    </option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"
+                    >How helpful was your mentor in answering your questions?
+                    (1- NO HELP, 5- BEST SUPPORT) *</label
+                  >
+                  <select class="form-control" id="helpful" required>
+                    <option value="" disabled selected>
+                      Select your option
+                    </option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"
+                    >How likely are you going to come back to spn for any future
+                    Help? (1-NOT REALLY, 5-MOST LIKELY) *</label
+                  >
+                  <select class="form-control" id="future" required>
+                    <option value="" disabled selected>
+                      Select your option
+                    </option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"
+                    >How impactful was spn for your career goals? (1-NOT MUCH,
+                    5-VERY IMPACTFUL) *</label
+                  >
+                  <select class="form-control" id="impactful" required>
+                    <option value="" disabled selected>
+                      Select your option
+                    </option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">
+                    What was the frequenct of the communication with the
+                    mentor?*</label
+                  >
+                  <select class="form-control" id="frequency" required>
+                    <option value="" disabled selected>
+                      Select your option
+                    </option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"
+                    >What was the medium of communication? *</label
+                  >
+                  <select class="form-control" id="medium" required>
+                    <option value="" disabled selected>
+                      Select your option
+                    </option>
+                    <option>Email</option>
+                    <option>Phone</option>
+                    <option>Whatsapp</option>
+                    <option>Facebook</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1"
+                    >Anything else we should know?</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <input type="submit" class="btnRegister" value="Submit" />
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="alert">Thank you for your feedback</div>
+    <br />
+    <br />
+    <br />
+
+    <section class="p-5 customers">
+      <div class="container-fluid">
+        <!-- title -->
+        <div class="row text-white text-center">
+          <div class="col m-4">
+            <h1 class="display-5 mb-4">Feedback</h1>
+            <div class="underline mb-4"></div>
+            <!-- <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Accusantium inventore, sint quisquam fugiat pariatur culpa
+              officia. Eveniet omnis quia tempora.
+            </p> -->
+          </div>
+        </div>
+        <!-- end of title -->
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <div
+              class="carousel slide"
+              data-ride="carousel"
+              id="customer-carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#customer-carousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#customer-carousel" data-slide-to="1"></li>
+                <li data-target="#customer-carousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                  <img
+                    src="https://media-exp1.licdn.com/dms/image/C5103AQG0SdMYRbUGOg/profile-displayphoto-shrink_800_800/0?e=1606348800&v=beta&t=1hD_vsBpS1_Zf3vZbijrerm2jifUPI31nzeSkP-qgAI"
+                    class="img-fluid rounded-circle m-5"
+                    width="150"
+                  />
+                  <blockquote class="blockquote text-white">
+                    <p class="mb-5">
+                      During job search, I updated my resume by doing research
+                      online and by asking my friends about it. After applying
+                      for several job position, I didn't get any response from
+                      any employer. I sought out to spn to help me and their
+                      support. My resume was reviewed by a professional in the
+                      industry and received a feedback to make necessary changes
+                      on it. I'm grateful for their efforts and quick response
+                      at that time.
+                    </p>
+                  </blockquote>
+                  <h5 class="text-light text-uppercase font-weight-bold mb-3">
+                    Mubin Kadiwala
+                  </h5>
+                  <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item text-center">
+                  <img
+                    src="https://scontent-bom1-2.xx.fbcdn.net/v/t31.0-8/23783794_525253511162631_6544096197014534917_o.jpg?_nc_cat=109&_nc_sid=174925&_nc_ohc=jvlBvajtVDUAX93Yzw2&_nc_ht=scontent-bom1-2.xx&oh=16fa7f6d90f8cd9b0abfacc63ec739ca&oe=5F9117D0"
+                    class="img-fluid rounded-circle m-5"
+                    width="150"
+                  />
+                  <blockquote class="blockquote text-white">
+                    <p class="mb-5">
+                      I loved the way I was helped by the experienced
+                      professional for building on my resume. I also got help on
+                      how to approach for job opportunities after my course
+                      completion, I plan to reach out to spn for help. I would
+                      recommend anyone who is new in this industry or changinng
+                      carrers as well as applying for jobs and need professional
+                      help to reach out to spn.
+                    </p>
+                  </blockquote>
+                  <h5 class="text-light text-uppercase font-weight-bold mb-3">
+                    Zohan Momin
+                  </h5>
+                  <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="carousel-item text-center">
+                  <!-- <img
+                    src="images/customer3.jpeg"
+                    class="img-fluid rounded-circle m-5"
+                    width="150"
+                  /> -->
+                  <blockquote class="blockquote text-white">
+                    <p class="mb-5">
+                      I was fortunate enough to come in contact with spn who
+                      helped me in every step of the process.Taking guidance
+                      from someone with similar background and interest helped
+                      me make sound decisions while choosing the university. The
+                      member of the SPN are doing a great service to our
+                      community by helping our younger generation for choosing a
+                      better path for their carrer and easing the entire
+                      process. I appreciate all the effort and support that I
+                      had received. Thank you.
+                    </p>
+                  </blockquote>
+                  <h5 class="text-light text-uppercase font-weight-bold mb-3">
+                    Safan Maknojia
+                  </h5>
+                  <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                    <li class="list-inline-item">
+                      <i class="fas fa-star text-warning"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of customers -->
+
+    <!-- footer -->
+    <footer class="bg-dark px-5">
+      <div class="container-fluid">
+        <div class="row text-light py-4">
+          <div class="col-lg-4 col-sm-6">
+            <h5 class="pb-3">About Us</h5>
+            <p class="small">
+              A platform for students and young professionals of Ismaili
+              community. A voluntary hand extended by few professionals to help,
+              guide and advice young members at any stage in their career path.
+            </p>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <h5 class="pb-3">Visit Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="footer-link">Home</a>
+              </li>
+              <li>
+                <a href="resources.html" class="footer-link">Resources</a>
+              </li>
+              <li>
+                <a href="index.html#reg" class="footer-link">Register</a>
+              </li>
+              <li>
+                <a href="about.html" class="footer-link">About</a>
+              </li>
+              <li>
+                <a href="feedback.html" class="footer-link">Feedback</a>
+              </li>
+              <li>
+                <a href="team.html" class="footer-link">Team</a>
+              </li>
+              <li>
+                <a href="contact.html" class="footer-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <h5 class="pb-3">Need Help?</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="footer-link text-uppercase">Support</a>
+              </li>
+              <li>
+                <a href="askspnhelp@gmail.com" class="text-info"
+                  >askspnhelp@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <h5 class="pb-3">Stay Connected</h5>
+            <p class="small">
+              Whether you have a question about our service or anything else,
+              our team is ready to answer all your questions.
+            </p>
+
+            <ul class="list-inline">
+              <a
+                style="padding: 10px"
+                href="https://www.facebook.com/askspnhelp"
+              >
+                <li class="list-inline-item">
+                  <i class="fab fa-facebook-square fa-2x text-primary"></i></li
+              ></a>
+              <a
+                style="padding: 10px"
+                href="https://www.instagram.com/askspnhelp/"
+              >
+                <li class="list-inline-item">
+                  <i class="fab fa-instagram fa-2x text-danger"></i></li
+              ></a>
+              <a
+                style="padding: 10px"
+                href="https://www.youtube.com/channel/UCTAIPMxQINui0w2DG878f5Q"
+                ><li class="list-inline-item">
+                  <i class="fab fa-youtube fa-2x text-danger"></i></li
+              ></a>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center text-light border-top pt-3">
+            <p>
+              Made with ❤ by
+              <a href="https://thedigispace.co/">The Digispace</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center text-light border-top pt-3">
+            <p>&copy; 2020 Copyright, All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+      integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/feedback.js"></script>
+  </body>
+</html>

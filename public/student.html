@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images/title-img.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SPNs</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg nav-menu" style="background: #2d545e">
+      <a href="index.html" class="navbar-brand text-light text-uppercase"
+        ><span class="h2 font-weight-bold"><img src="images/spn-1.png" /></span
+        ><span class="h1"></span
+      ></a>
+      <button
+        class="navbar-toggler nav-button"
+        type="button"
+        data-toggle="collapse"
+        data-target="#myNavbar"
+      >
+        <div class="bg-light line1"></div>
+        <div class="bg-light line2"></div>
+        <div class="bg-light line3"></div>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold"
+        id="myNavbar"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link m-2 menu-item">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="resources.html" class="nav-link m-2 menu-item"
+              >Resources</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link m-2 menu-item dropdown-toggle nav-active"
+              id="navbarDropdown"
+              href=""
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Register
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="mentor.html">Mentor</a>
+              <a class="dropdown-item" href="student.html">Student</a>
+              <a class="dropdown-item" href="bussiness.html">Business</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link m-2 menu-item">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="feedback.html" class="nav-link m-2 menu-item">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a href="team.html" class="nav-link m-2 menu-item">Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link m-2 menu-item">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="header1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <h1>Student Registration Form</h1>
+            <!-- <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas,
+              temporibus?
+            </p> -->
+          </div>
+        </div>
+      </div>
+      <!-- end of banner -->
+    </header>
+    <!-- end of header -->
+    <br />
+    <br />
+    <br />
+
+    <form id="contactForm">
+      <div class="container register">
+        <div class="row">
+          <div class="col-md-3 register-left">
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+            <h3>Welcome</h3>
+            <p>You are 30 seconds away from becoming spn student</p>
+          </div>
+          <div class="col-md-9 register-right">
+            <h3 class="register-heading">Let's get started</h3>
+            <div class="row register-form">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    id="firstname"
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name *"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    id="lastname"
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name *"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    id="country"
+                    type="text"
+                    class="form-control"
+                    placeholder="Country *"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    id="city"
+                    type="text"
+                    class="form-control"
+                    placeholder="Current city *"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email *"
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="grade" required>
+                    <option>Current Grade/Class</option>
+                    <option>8th</option>
+                    <option>9th</option>
+                    <option>10th</option>
+                    <option>11th</option>
+                    <option>12th</option>
+                    <option>Bachelors Degree</option>
+                    <option>Masters Degree</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    id="field"
+                    type="text"
+                    class="form-control"
+                    placeholder="Current field of studies "
+                    value=""
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    id="purpose"
+                    type="text"
+                    class="form-control"
+                    placeholder="Purpose "
+                    value=""
+                  />
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="LookingFor" required>
+                    <option>Looking for</option>
+                    <option>Carrer guidance</option>
+                    <option>Study Abroad</option>
+                    <option>Mentoring</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="destination">
+                    <option>Preferred destination</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Undecided</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input
+                    id="Pursue"
+                    type="text"
+                    class="form-control"
+                    placeholder="Majors/Degree you want to pursue "
+                    value=""
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    id="additional"
+                    type="text"
+                    class="form-control"
+                    placeholder="Additional details
+                   "
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    placeholder="Introduce yourself in 2-3 Lines (We will send out this info when we introduce you to student)*"
+                    name="message"
+                    id="message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <input type="submit" class="btnRegister" value="Submit" />
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+            <div class="alert">Thank you for registering with spn</div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <br />
+    <br />
+    <br />
+
+    <!-- footer -->
+    <footer class="bg-dark px-5">
+      <div class="container-fluid">
+        <div class="row text-light py-4">
+          <div class="col-lg-4 col-sm-6">
+            <h5 class="pb-3">About Us</h5>
+            <p class="small">
+              A platform for students and young professionals of Ismaili
+              community. A voluntary hand extended by few professionals to help,
+              guide and advice young members at any stage in their career path.
+            </p>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <h5 class="pb-3">Visit Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="footer-link">Home</a>
+              </li>
+              <li>
+                <a href="resources.html" class="footer-link">Resources</a>
+              </li>
+              <li>
+                <a href="index.html#reg" class="footer-link">Register</a>
+              </li>
+              <li>
+                <a href="about.html" class="footer-link">About</a>
+              </li>
+              <li>
+                <a href="feedback.html" class="footer-link">Feedback</a>
+              </li>
+              <li>
+                <a href="team.html" class="footer-link">Team</a>
+              </li>
+              <li>
+                <a href="contact.html" class="footer-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <h5 class="pb-3">Need Help?</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="footer-link text-uppercase">Support</a>
+              </li>
+              <li>
+                <a href="askspnhelp@gmail.com" class="text-info"
+                  >askspnhelp@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <h5 class="pb-3">Stay Connected</h5>
+            <p class="small">
+              Whether you have a question about our service or anything else,
+              our team is ready to answer all your questions.
+            </p>
+
+            <ul class="list-inline">
+              <a
+                style="padding: 10px"
+                href="https://www.facebook.com/askspnhelp"
+              >
+                <li class="list-inline-item">
+                  <i class="fab fa-facebook-square fa-2x text-primary"></i></li
+              ></a>
+              <a
+                style="padding: 10px"
+                href="https://www.instagram.com/askspnhelp/"
+              >
+                <li class="list-inline-item">
+                  <i class="fab fa-instagram fa-2x text-danger"></i></li
+              ></a>
+              <a
+                style="padding: 10px"
+                href="https://www.youtube.com/channel/UCTAIPMxQINui0w2DG878f5Q"
+                ><li class="list-inline-item">
+                  <i class="fab fa-youtube fa-2x text-danger"></i></li
+              ></a>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center text-light border-top pt-3">
+            <p>
+              Made with ❤ by
+              <a href="https://thedigispace.co/">The Digispace</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center text-light border-top pt-3">
+            <p>&copy; 2020 Copyright, All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end of footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+      integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/student.js"></script>
+  </body>
+</html>
